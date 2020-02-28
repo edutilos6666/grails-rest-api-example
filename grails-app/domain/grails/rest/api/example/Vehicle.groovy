@@ -1,5 +1,9 @@
 package grails.rest.api.example
 
+
+import grails.rest.Resource
+
+@Resource(uri='/api/vehicles', formats=['json', 'xml'])
 @SuppressWarnings('GrailsDomainReservedSqlKeywordName')
 class Vehicle {
 

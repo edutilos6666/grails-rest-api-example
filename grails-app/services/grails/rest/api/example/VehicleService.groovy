@@ -1,11 +1,8 @@
 package grails.rest.api.example
 
-import grails.gorm.transactions.Transactional
+import grails.gorm.services.Service
 
-@Transactional
-class VehicleService {
-
-    def serviceMethod() {
-
-    }
+@Service(Vehicle)
+interface VehicleService {
+    Vehicle save(String name, Make make, Model model, Integer year)
 }
